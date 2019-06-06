@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Startup Solutions</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/app.css">
+  </head>
+  <body>
+    <script>
+      window.FlappyemberENV = {{ENV}};
+      window.EmberENV = window.FlappyemberENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/flappyember.js"></script>
+    <script>
+      window.Flappyember = require('flappyember/app')['default'].create(FlappyemberENV.APP);
+    </script>
+    <script type="text/javascript" src="//api.filepicker.io/v1/filepicker.js"></script>
+    <script src="//api.filepicker.io/v1/filepicker_debug.js"></script>
+  </body>
+</html>
+
